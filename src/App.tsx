@@ -56,8 +56,8 @@ const galleryImages = [
   },
   {
     src: image4,
-    alt: 'Kang Seulgi performing in 2014',
-    note: 'Debut-era glow',
+    alt: 'Seulgi at Incheon International Airport in 2024',
+    note: 'Airport chic',
   },
 ]
 
