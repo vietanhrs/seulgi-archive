@@ -218,7 +218,7 @@
 
 .hero-visual {
   position: relative;
-  min-height: 640px;
+  min-height: 760px;
 }
 
 .hero-visual__halo {
@@ -294,10 +294,11 @@
 
 .hero-quote-card {
   position: absolute;
-  left: 0;
-  bottom: 2rem;
+  left: 1rem;
+  right: 1rem;
+  bottom: 0;
   z-index: 2;
-  max-width: 280px;
+  max-width: 320px;
 }
 
 .hero-quote-card__label {
