@@ -32,26 +32,30 @@ import {
   IconUserStar,
   IconWorldWww,
 } from '@tabler/icons-react'
+import image1 from './assets/seulgi/image-1.jpg'
+import image2 from './assets/seulgi/image-2.png'
+import image3 from './assets/seulgi/image-3.jpg'
+import image4 from './assets/seulgi/image-4.jpg'
 import './App.css'
 
 const galleryImages = [
   {
-    src: 'https://upload.wikimedia.org/wikipedia/commons/d/db/Kang_Seulgi_LONGCHAMP_2024.jpg',
+    src: image1,
     alt: 'Kang Seulgi at LONGCHAMP in 2024',
     note: 'Editorial elegance',
   },
   {
-    src: 'https://upload.wikimedia.org/wikipedia/commons/9/90/Kang_Seulgi_2021.png',
+    src: image2,
     alt: 'Kang Seulgi portrait in 2021',
     note: 'Soft charisma',
   },
   {
-    src: 'https://upload.wikimedia.org/wikipedia/commons/e/e1/Kang_Seul-gi_at_Dream_Concert_on_May_12%2C_2018_%282%29.jpg',
+    src: image3,
     alt: 'Kang Seulgi performing at Dream Concert 2018',
     note: 'Stage power',
   },
   {
-    src: 'https://upload.wikimedia.org/wikipedia/commons/8/8d/Kang_Seul-gi_at_2014_Hallyu_Dream_Festival_in_September_28%2C_2014_%283%29.jpg',
+    src: image4,
     alt: 'Kang Seulgi performing in 2014',
     note: 'Debut-era glow',
   },
@@ -129,11 +133,11 @@ function App() {
   }
 
   return (
-    <main className="app-shell" data-mode={computedColorScheme}>
+    <main id="top" className="app-shell" data-mode={computedColorScheme}>
       <div className="app-shell__backdrop" />
-      <Container size="xl" className="app-shell__container">
-        <Stack gap="3rem">
-          <header className="topbar">
+      <header className="topbar-shell">
+        <div className="topbar-shell__inner">
+          <div className="topbar">
             <Group justify="space-between" align="center" wrap="wrap" gap="md">
               <div className="topbar__title-wrap">
                 <Badge variant="light" color="orange" radius="xl" className="eyebrow-badge">
@@ -162,8 +166,12 @@ function App() {
                 />
               </Group>
             </Group>
-          </header>
+          </div>
+        </div>
+      </header>
 
+      <Container size="xl" className="app-shell__container">
+        <Stack gap="3rem">
           <section className="hero-panel">
             <Grid align="center">
               <Grid.Col span={{ base: 12, lg: 7 }}>
